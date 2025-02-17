@@ -1,0 +1,105 @@
+.content {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: 1px solid red;
+
+    .intro {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid green;
+
+        .description {
+            height: auto;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid blue;
+
+            .title {
+                height: auto;
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h1 {
+                    color: #ffffff;
+                    font-size: 5rem;
+                }
+
+                img {
+                    height: auto;
+                    width: 380px;
+                    z-index: -1;
+                    position: absolute;
+                    top: 243px;
+                    left: 200px;
+                }
+            }
+
+            .button-container {
+                height: auto;
+                width: 70%;
+                margin-top: 60px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+
+                button {
+                    height: 70px;
+                    width: 220px;
+                    background-color: #1e95f2;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .image {
+            height: auto;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid blue;
+
+            .background-image {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-image: url('./src/assets/gradient.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: 1px solid yellow;
+
+                img {
+                    height: 200%;
+                    width: auto;
+                    z-index: 1;
+                    position: absolute;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
