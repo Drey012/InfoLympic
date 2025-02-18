@@ -1,18 +1,63 @@
 header {
   z-index: 10;
   height: 180px;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  align-items: start;
+  justify-content: center;
   padding: 90px;
 
+  &.scrolled {
+    height: 70px;
+  }
+
+  div {
+    width: 50%;
+    justify-self: flex-end;
+    position: relative;
+    top: 40px;
+  }
+
+  ul {
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex; // Organiza os itens em linha
+    justify-content: end; // Centraliza os itens horizontalmente
+    align-items: center; // Centraliza verticalmente
+    gap: 30px; // Espaçamento entre os itens
+    list-style: none; // Remove os marcadores padrão da lista
+    padding-right: 1%; // Remove espaçamento interno padrão
+    padding-top: 1%;
+    margin: 0; // Remove margens padrão
+
+
+    li {
+      top: 0;
+      font-size: 1.2rem; // Define tamanho da fonte
+      color: white; // Define cor do texto
+      cursor: pointer; // Transforma o cursor em "mãozinha"
+
+
+      &:hover {
+       font-weight: 600;
+        transition: 0.4s;
+      }
+      &:not(:hover) {
+        transition: 0.1s ease-in-out;
+      }
+    }
+  }
 
   a {
+    height: 100%;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     img {
       height: auto;
@@ -22,9 +67,9 @@ header {
       top: 10px;
     }
 
-    h1{
-        color: #ffffff;
-        font-size: 3.5rem;
+    h1 {
+      color: #ffffff;
+      font-size: 3.5rem;
     }
   }
 }
