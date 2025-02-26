@@ -40,16 +40,16 @@ footer{
         }
 
         .icons{
-            width: 100%;
+            width: 240%;
             height: auto;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: right;
+            justify-content: right;
             gap: 20px;
 
             img {
                 height: auto;
-                width: 50px;
+                width: 80px;
                 position: relative;
                 top: 50px;
 
@@ -83,7 +83,7 @@ footer{
         ul{
             text-align: left;
             padding-left: 15px;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             color: #ffffff;
             font-size: 1.5rem;
             width: 80%;
